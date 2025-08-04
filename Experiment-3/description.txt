@@ -1,0 +1,11 @@
+This is a simple Admin Dashboard webpage made using HTML and CSS. 
+It has a header with a title and a dark mode toggle switch, a sidebar with clickable blue underlined links (Home, Users, Settings), a main area with a welcome message, and a footer. 
+The layout is created using CSS Grid, and the colors change when dark mode is turned on using a checkbox. 
+JavaScript is used to switch between light and dark themes. 
+The sidebar links are shown in bullet points and are styled to look like real navigation links.
+
+Test cases:
+1.When you open the page, it shows the light theme by default.
+2.Clicking the dark mode checkbox changes the background and text to dark theme colors.
+3.The sidebar links are clickable and styled properly.
+4.The layout stays neat even when you resize the window.
