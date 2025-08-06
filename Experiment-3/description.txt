@@ -1,11 +1,45 @@
-This is a simple Admin Dashboard webpage made using HTML and CSS. 
-It has a header with a title and a dark mode toggle switch, a sidebar with clickable blue underlined links (Home, Users, Settings), a main area with a welcome message, and a footer. 
-The layout is created using CSS Grid, and the colors change when dark mode is turned on using a checkbox. 
-JavaScript is used to switch between light and dark themes. 
-The sidebar links are shown in bullet points and are styled to look like real navigation links.
+This project creates a basic admin dashboard layout using HTML and CSS.
+It includes a dark mode toggle, a sidebar with links, a main content area, and a footer. 
+It uses CSS Grid for layout and CSS variables for easy theme switching.
 
-Test cases:
-1.When you open the page, it shows the light theme by default.
-2.Clicking the dark mode checkbox changes the background and text to dark theme colors.
-3.The sidebar links are clickable and styled properly.
-4.The layout stays neat even when you resize the window.
+HTML (structure of the webpage):
+1. Header (<header>)
+Shows the title "Admin Dashboard"
+Contains a checkbox to toggle Dark Mode
+
+2. Sidebar (<div id="sidebar">)
+Lists 3 links: Home, Users, and Settings
+Each link is blue, underlined, and clickable (via <a>)
+
+3. Main Section (<main>)
+Displays a welcome message and space for content like charts or tables
+
+4. Footer (<footer>)
+Shows copyright
+
+5. Script
+Adds a click event to the checkbox that toggles dark mode by adding/removing the dark class on <body>
+
+CSS (complete styling):
+1. Color Themes with Variables
+Uses :root for default (light) colors
+Uses .dark class for dark mode colors (like dark backgrounds and light text)
+
+2. Layout
+Uses CSS Grid to arrange header, sidebar, main, and footer areas
+Makes sure layout fills the full screen height (height: 100vh)
+
+3.Header
+Green background, white text
+Aligns title and toggle on the same line
+
+4. Sidebar
+Light grey in light mode, dark grey in dark mode
+Bulleted list with blue underlined links (light blue in dark mode)
+
+5. Main Content
+Simple padding for clean spacing
+
+6. Footer
+Green background (should be same as header)
+White centered text
