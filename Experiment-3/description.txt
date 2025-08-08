@@ -2,44 +2,65 @@ This project creates a basic admin dashboard layout using HTML and CSS.
 It includes a dark mode toggle, a sidebar with links, a main content area, and a footer. 
 It uses CSS Grid for layout and CSS variables for easy theme switching.
 
-HTML (structure of the webpage):
-1. Header (<header>)
-Shows the title "Admin Dashboard"
-Contains a checkbox to toggle Dark Mode
+HTML (BASIC STRUCTURE OF THE WEBPAGE):
+First we have to create an input tag which has a checkbox type and its id is "DarkModeToggle".
+Then we created a div tag inside which we have to create our 4 main parts of the webpage i.e. header, navigation bar, main section and the footer.
 
-2. Sidebar (<div id="sidebar">)
-Lists 3 links: Home, Users, and Settings
-Each link is blue, underlined, and clickable (via <a>)
+1. Header (<header> tag)
+Shows the title "Admin Dashboard" in bold letters and white coloured text
+A label tag which references the id of input tag and writes Dark Mode on screen
 
-3. Main Section (<main>)
+2. Nav  (<nav id="sidebar">)
+An unordered list containing 3 links
+3 links: Home, Users, and Settings
+Each link is blue, underlined, and clickable with the help of <a> tag
+
+3. Main Section (<main> tag)
 Displays a welcome message and space for content like charts or tables
 
 4. Footer (<footer>)
-Shows copyright
+Shows copyright mark
 
-5. Script
-Adds a click event to the checkbox that toggles dark mode by adding/removing the dark class on <body>
 
-CSS (complete styling):
+CSS (STYLING THE WEBPAGE):
 1. Color Themes with Variables
-Uses :root for default (light) colors
-Uses .dark class for dark mode colors (like dark backgrounds and light text)
+Used :root which is accesible in the whole <html> tag.
+Created variables inside the :root selector and initialized with the initial values i.e green.
+Declared one selector called input:checked ~ .dashboard where we declared the variables with dark mode colours as their values.
+This step is necessary for switching the theme to dark mode using CSS.
+.dashboard is the class of div tag.
 
-2. Layout
-Uses CSS Grid to arrange header, sidebar, main, and footer areas
-Makes sure layout fills the full screen height (height: 100vh)
+2. Grid Layout
+Uses CSS Grid to arrange header, sidebar, main, and footer areas.
+Here we used grid-template-areas property of grid layout and using this property we made our layout.
+Our layout has header header in first row i.e. in first row 2 columns are for header.
+Similarly, in the last row we have two footer footer i.e. footer layout has two columns included.
+And in the middle row first column is navigation or sidebar and another is main.
+Height of the layout is adjusted for full screen.
 
 3.Header
 Green background, white text
 Aligns title and toggle on the same line
+Position is fixed relative to get our darkmode on appropriate position
 
 4. Sidebar
 Light grey in light mode, dark grey in dark mode
 Bulleted list with blue underlined links (light blue in dark mode)
 
 5. Main Content
+Grid area is set to main
 Simple padding for clean spacing
 
 6. Footer
-Green background (should be same as header)
+Grid are is set to footer
+Green background (same as header)
 White centered text
+Padding included for clean spacing
+
+
+LEARNING OUTCOMES:
+1. Learnt how to make a theme switching dashboard without using javascript
+2. Learnt how to write clean and simple html code 
+3. Learnt about various properties of grid layout such as grid-template-area, grid-template-columns, grid-template-rows, etc.
+4. Learnt about making variable in CSS and using them anywhere in the CSS code with the help of var(variable_name)
+5. Understanding the use of grid layout and using it for making the dashboard
