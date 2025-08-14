@@ -41,3 +41,10 @@ Adds a 2px solid black border around the box.
 Provides 10px padding inside for spacing.
 Creates 20px space below with margin-bottom.
 Limits the width to 500px for a neat layout.
+
+
+
+Learning Outcomes:
+1. Learnt about basics of javascript such as variables, loops, if-else statement
+2. Understanding JavaScript and how to write code in javascript
+3. Understanding how to code in HTML and CSS for making an interactive webpage
