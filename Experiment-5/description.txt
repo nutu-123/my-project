@@ -1,0 +1,55 @@
+This project creates a basic Product Filter system using HTML and JavaScript.
+It allows users to add products with details like ID, Name, Price and Category and then filter them by category using a dropdown menu.
+Using JavaScript categories are automatically updated based on user input.
+
+
+HTML (BASIC STRUCTURE OF THE WEBPAGE):
+We first created a <div> with class "container" inside the <body> tag, which contains all sections of the project.
+1.Product Details Section
+Heading(<h2>): "Enter Product Details"
+Four input fields created with <input> tags for:
+Product ID
+Product Name
+Product Price
+Product Category
+A button with the text "Add Product" that calls addProduct() function on click (<button>)
+
+2.Category Filter Section
+Heading(<h2>): "Filter by Category"
+A <select> dropdown with id "categoryDropdown" that updates categories
+Includes a default option using <option> "All" to show every product which is listed
+
+3.Product List Section
+Heading: "Product List"
+A <div> with id "productList" where products will be displayed dynamically
+
+
+JAVASCRIPT (FUNCTIONALITY):
+1. Function 1: Adding Products (addProduct())
+Reads input values (ID, Name, Price, Category)
+Validates that no field is empty
+Creates a JSON object for the product and pushes it to the products[] array
+Updates category dropdown and product list dynamically
+Clears input fields after successful addition
+Updating Category Dropdown (updateCategoryDropdown())
+Extracts unique categories from products[]
+Refreshes the dropdown with new categories
+Always keeps "All" option at the top
+
+2. Function 2: Filtering Products (filterProducts())
+Displays only products belonging to the selected category
+If "All" is selected, groups products by category
+Handles cases where no products are added or no product exists in a selected category
+
+3. Function 3: Clear Inputs (clearInputs())
+Resets all input fields after adding a product
+
+4. Initialization
+Calls filterProducts() on page load to show "No products added yet."
+
+
+LEARNING OUTCOMES:
+I learnt how to change and update the webpage content using JavaScript.
+I understood how to save product details in a list as objects.
+I learnt how to show products category-wise and filter them easily.
+I understood how to make a system where the webpage updates automatically without reloading.
