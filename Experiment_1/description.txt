@@ -1,5 +1,0 @@
-In experiment no. 1 we created a Student Registration Form that collects essential student details including name, email, and age. 
-It includes basic client-side validation using HTML5 attributes like required, minlength, maxlength, and min/max to ensure proper input from users. 
-The form uses submit button to securely send data to the server endpoint. In this lab we demonstrated the fundamentals of form creation, input fields and adding validations in basic web development.
-Then we created a github repository named my_project and linked it with vs code. 
-After linking the github with vs code we pushed the student registration form into the repository.
