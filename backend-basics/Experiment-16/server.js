@@ -52,7 +52,7 @@ app.delete('/users/:id', (req, res) => {
 const router = express.Router();
 router.use((req, res, next) => {
   console.log('Admin router middleware executed');
-  //res.send("Hello, Chandigarh University!")
+  res.send("Hello, Chandigarh University!")
   next();
 });
 router.get('/dashboard', (req, res) => {
