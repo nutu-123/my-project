@@ -1,0 +1,10 @@
+We have created a simple Movie collection UI which shows the movie details in the form of cards.
+Movie details include title of the movie, genre and the ratings.
+After this each card has a remove button which removes that particular movie.
+This remove button when clicked calls a function removeMovie().
+And then the movie is removed from the list.
+
+Learning Outcomes:
+1. Learnt how to create a react app
+2. Learnt how to render elements in the form of cards.
+3. Learnt about the components in react and its uses.
